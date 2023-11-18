@@ -68,7 +68,7 @@ class Channel:
         self._channel_id = value
 
     def __str__(self):
-        return f"{self.__channel_id} ({self.url})"
+        return f"{self.title} ({self.url})"
 
     def __add__(self, other):
         return int(self.subscriber_count) + int(other.subscriber_count)
